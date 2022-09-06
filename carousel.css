@@ -1,0 +1,242 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+.cls
+{
+	letter-spacing: 10px;
+}
+.carousel-spacing
+{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 10rem;
+  z-index: 10;
+	
+}
+
+.shop-btn
+{
+	
+    font-size: 1rem !important;
+    padding: 1rem 1.4rem !important;
+    border-radius: 8rem !important;
+	  color: #21201f !important;
+    background-color: #ffa273 !important;
+	  border: none !important;
+	  width: 25rem !important;
+	  font-weight: bold;
+	
+}
+
+@media only screen and (max-width: 425px)
+{
+	.cls
+		{
+			letter-spacing: 2px;
+		}	
+	
+	.shop-btn
+		{
+
+			font-size: 1rem !important;
+			padding: 1rem 1.4rem !important;
+			border-radius: 8rem !important;
+			color: #21201f !important;
+			background-color: #ffa273 !important;
+			border: none !important;
+			width: 15rem !important;
+			font-weight: 500;
+			text-transform: uppercase;
+
+		}
+}
+
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 45rem;
+	position: relative;
+	
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-position: center;
+  background-size: cover;
+	opacity: .9;
+ 
+}
+.carousel-item-custom-height {
+  height: auto !important;
+	
+	
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+/* rtl:end:ignore */
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  /* rtl:remove */
+  letter-spacing: -.05rem;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+	 
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+/*Carouse Indicators
+-------*/
+
+carousel-indicators
+{
+	background-color: red;
+}
+.carousel-indicators [data-bs-target]
+{
+	height: 10px !important;
+	width: 10px !important;
+	border-radius: 100% !important;
+}
+
+
+/*cart Image
+------------------*/
+.card >img
+{
+	 background-position: center;
+  	 background-size: cover;
+	
+}
+
+/*Owl Carousel Styles */
+
+ .owl-carousel .owl-nav button.owl-prev
+{
+  background-image: url(./images/previous-icon-light.png);
+  background-repeat: no-repeat;
+  height: 45px;
+  width: 45px;
+}
+.owl-carousel .owl-nav button.owl-prev:hover
+{
+  background-image: url(./images/previous-icon-light.png);
+  background-color: #fff;
+  height: 45px;
+  width: 45px;
+  
+}
+.owl-carousel .owl-nav button.owl-next
+{
+  background-image: url(./images/next-icon-light.png);
+  height: 45px;
+  width: 45px;
+}
+.owl-carousel .owl-nav button.owl-next:hover
+{
+  background-image: url(./images/next-icon-light.png);
+  background-color: #fff;
+  height: 45px;
+  width: 45px;
+  
+}
+.owl-carousel .owl-nav span
+{
+ width: 1px;
+ opacity: 0;
+}
+.owl-carousel .owl-nav span:hover
+{
+ width: 1px;
+ opacity: 0;
+}
+.owl-theme button.owl-nav:hover
+{
+  background-color: none !important;
+}
+
+
+
+
+.owl-theme .owl-nav
+{
+  position:absolute;
+  top:-80px;
+  right: 0px;
+}
+.owl-dots
+{
+display: none;
+}
+.owl-item 
+{
+  margin-right: 0px !important;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+.owl-nav
+{
+ display: none;
+}
+}
